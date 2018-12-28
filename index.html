@@ -2,8 +2,31 @@
 <html>
     <head>
         <title>lol</title>
+        <meta charset="UTF-8"/>
+        <link href="css/index.css" rel="stylesheet"/>
+
     </head>
     <body>
-        <h1>initial commit</h1>
+        <h1>Города</h1>
+        <input id="team0" name="" type="text" placeholder="Первый игрок"/>
+        <span id="team0score">0</span>
+        <br/>
+        <input id="team1" name="" type="text" placeholder="Второй игрок"/>
+        <span id="team1score">0</span>
+        <br/>
+        <button id="giveup">Сдаться</button>
+        <br/>
+        <br/>
+        <input id="city" name="" type="text" value="" placeholder="Напишите город"/>
+        <button id="submit">Назвал!</button>
+        <br/>
+        <br/>
+        <span>Текущая буква: <b id="letter"></b></span>
+        <br/>
+        <br/>
+        <div id="map" style="width: 900px; height: 400px"></div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d636555d-2d0c-4999-8bba-35386309efbb&lang=en_US" type="text/javascript"></script>
+        <script src="assert/cities.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
